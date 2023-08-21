@@ -1,4 +1,4 @@
-package com.code.arrays;  //   
+package com.code.arrays;   
 
 public class Seggregate01{
 
@@ -50,13 +50,8 @@ public class Seggregate01{
 
             for (int i = 0; i < finalArray1.length; i++) {
                 System.out.println(finalArray1[i]);
-            }
-
-
-       
-
-
-        
+            } 
+              
     }
     
 }
