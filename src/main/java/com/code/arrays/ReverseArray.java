@@ -53,11 +53,36 @@ public class ReverseArray {
 
     }
 
+    public static String reverseString(String str){
+        char[] ch = str.toCharArray();
+        int len = ch.length;
+        int i =0; int j = len-1; char temp ;
+
+        while(i < j){
+            temp = ch[i];
+            ch[i] = ch[j];
+            ch[j] = temp;
+            i++;
+            j--;
+        }
+
+        for (int k = 0; k < ch.length; k++) {
+            System.out.println(ch[k]);
+        }
+
+        String string  = new String(ch);
+
+        return string;
+    }
+
     public static void main(String[] args) {
         
         int[] arr = {1,2,3,4,5};
+
         reverseUsingTwoPointers(arr);
         reverseUsingForLoop(arr);
+        
+        reverseString("Monika");
     }
     
 }
